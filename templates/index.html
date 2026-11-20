@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A standards-informed credential security assessment prototype.">
+  <title>Credential Security Assessment</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}?v=3">
+  <script src="{{ url_for('static', filename='app.js') }}?v=3" defer></script>
+</head>
+<body>
+  <main class="shell">
+    <header class="intro">
+      <p class="eyebrow">Credential security assessment</p>
+      <h1>Understand a password before relying on it.</h1>
+      <p>Review standards alignment, predictable patterns and known breach exposure as separate results.</p>
+    </header>
+
+    <section class="assessor" aria-labelledby="assessment-heading">
+      <div class="form-panel">
+        <h2 id="assessment-heading">Assess a demonstration password</h2>
+        <p class="privacy-note">For your safety, do not enter a password you currently use.</p>
+        <form id="assessment-form">
+          <label for="password">Password</label>
+          <div class="password-row">
+            <input id="password" name="password" type="password" maxlength="128" autocomplete="new-password" required>
+            <button id="toggle-password" class="secondary" type="button">Show</button>
+          </div>
+          <div class="actions">
+            <button id="submit-button" type="submit">Assess password</button>
+            <button id="clear-button" class="secondary" type="button">Clear</button>
+          </div>
+          <p id="form-error" class="error" role="alert"></p>
+        </form>
+      </div>
+
+      <div id="empty-state" class="empty-state">
+        <h2>Your results will appear here</h2>
+        <p>The score is a transparent comparative indicator, not a guarantee of security.</p>
+      </div>
+
+      <section id="results" class="results" hidden aria-live="polite">
+        <div class="result-heading">
+          <div>
+            <p class="eyebrow">Comparative score</p>
+            <p><span id="score" class="score">0</span><span class="score-total">/100</span></p>
+          </div>
+          <span id="band" class="band">Weak</span>
+        </div>
+
+        <div class="result-grid">
+          <article>
+            <h3>Standards alignment</h3>
+            <p id="standard-result"></p>
+          </article>
+          <article>
+            <h3>Breach exposure</h3>
+            <p id="breach-result"></p>
+          </article>
+        </div>
+
+        <div>
+          <h3>Score breakdown</h3>
+          <div id="breakdown" class="breakdown"></div>
+        </div>
+
+        <div>
+          <h3>Recommended actions</h3>
+          <ul id="recommendations"></ul>
+        </div>
+
+        <p id="result-notice" class="result-notice"></p>
+      </section>
+    </section>
+  </main>
+</body>
+</html>

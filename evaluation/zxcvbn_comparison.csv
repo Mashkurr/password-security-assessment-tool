@@ -1,0 +1,41 @@
+password_case,expected_project_score,project_score,project_band,zxcvbn_score,mapped_zxcvbn_band,band_agreement
+123456,18,18,Weak,0,Weak,True
+password,38,38,Weak,0,Weak,True
+qwerty,18,18,Weak,0,Weak,True
+letmein,28,28,Weak,0,Weak,True
+admin,28,28,Weak,0,Weak,True
+welcome,28,28,Weak,0,Weak,True
+monkey,28,28,Weak,0,Weak,True
+football,38,38,Weak,0,Weak,True
+abc2024,35,35,Weak,1,Weak,True
+secret,28,28,Weak,0,Weak,True
+abc123,20,20,Weak,0,Weak,True
+dragon,28,28,Weak,0,Weak,True
+111111,18,18,Weak,0,Weak,True
+abcdefg,18,18,Weak,0,Weak,True
+aaaaaaa,18,18,Weak,0,Weak,True
+qwerty12,30,30,Weak,0,Weak,True
+short!,55,55,Fair,1,Weak,False
+test123,20,20,Weak,0,Weak,True
+Qwerty2024!,50,50,Fair,2,Fair,True
+GlassTree8,58,58,Fair,3,Strong,False
+passw0rd,40,40,Fair,0,Weak,False
+Password12!,70,70,Strong,1,Weak,False
+Hello2024!,60,60,Strong,2,Fair,False
+Admin1234!,60,60,Strong,2,Fair,False
+Abcd5678!,60,60,Strong,3,Strong,True
+Summer2024!,60,60,Strong,2,Fair,False
+Welcome1!,70,70,Strong,1,Weak,False
+Monkey123!,60,60,Strong,1,Weak,False
+CloudRiver7,68,68,Strong,3,Strong,True
+BlueSky!99,70,70,Strong,2,Fair,False
+River-Mango-Atlas-47!,100,100,Very Strong,4,Very Strong,True
+correct horse battery staple,95,95,Very Strong,4,Very Strong,True
+violet-canvas-orbit-lantern,95,95,Very Strong,4,Very Strong,True
+Maple!Orbit!Cedar!29,100,100,Very Strong,4,Very Strong,True
+Long Unique Phrase 84!,100,100,Very Strong,4,Very Strong,True
+Horizon-Quartz-Maple-71,100,100,Very Strong,4,Very Strong,True
+Gentle River Lantern Cloud,98,98,Very Strong,4,Very Strong,True
+Azure-Cedar-Planet-94!,100,100,Very Strong,4,Very Strong,True
+Copper Meadow Galaxy 82,100,100,Very Strong,4,Very Strong,True
+Silver-Atlas-Breeze-53!,100,100,Very Strong,4,Very Strong,True

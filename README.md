@@ -1,5 +1,7 @@
 # Password Security Assessment Tool
 
+**Live application:** [Open the deployed assessment tool](https://password-security-assessment-tool.onrender.com)
+
 A web-based password strength and breach-exposure assessment tool developed by
 **Mashkur Dademade Adetoro** as a Postgraduate Diploma in Information Technology
 project at Nile University of Nigeria.
